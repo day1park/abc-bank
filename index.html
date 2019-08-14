@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABC Bank - Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="login-page">
+        <form class="login-container">
+            <div class="login-title">
+                <h1>Login</h1>
+            </div>
+            <div class="login-forms">
+                <select id="login-role" class="form-control select login-inputs">
+                    <option value="" disabled selected hidden>(Choose Type)</option>
+                    <option value="CAE">Customer-Account Executive</option>
+                    <option value="CT">Cashier/Teller</option>
+                </select>
+                <div id="role-error" class="alert alert-danger" role="alert">
+                    Please choose a role!
+                </div>
+                <input id="login-user" class="form-control login-inputs" type="text" placeholder="Enter Employee ID" />
+                <div id="user-error-1" class="alert alert-danger" role="alert">
+                    Please enter alphabetic/alphanumeric only!
+                </div>
+                <div id="user-error-2" class="alert alert-danger" role="alert">
+                    Username must be at least 8 characters long!
+                </div>
+                <div id="user-error-3" class="alert alert-danger" role="alert">
+                    Username doesn't exist!
+                </div>
+                <input id="login-password" class="form-control login-inputs" type="password"
+                    placeholder="Enter Password" />
+                <div id="password-error-1" class="alert alert-danger" role="alert">
+                    Please enter at least one number, one upper case, and one symbol character!
+                </div>
+                <div id="password-error-2" class="alert alert-danger" role="alert">
+                    Password must be at least 10 characters long!
+                </div>
+                <div id="password-error-3" class="alert alert-danger" role="alert">
+                    Wrong password!
+                </div>
+                <div class="col text-center">
+                    <button class="btn btn-light" type="button" onclick="Validation()">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/database.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
