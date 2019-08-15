@@ -1,0 +1,57 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    margin-right: 10px;
+}
+
+body {
+    background-color: #E6E6E6;
+    background-image: linear-gradient(to bottom, #E6E6E6, white);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.btn.btn-light {
+    background-color: #FFF200;
+    border-radius: 12px;
+    transition: all 0.3s ease 0s;
+
+    /* background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.2) 49%, rgba(0,0,0,0.15) 51%, rgba(0,0,0,0.05)); */
+}
+
+.btn.btn-light:hover {
+    color: #FFF;
+    background-color: #ffcc00;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+.btn-def-size {
+    width: 80px;
+}
+
+.page-title {
+    padding: 20px 0 20px;
+}
+
+.title-bold {
+    font-weight: bold;
+}
+
+/* .btn-refresh {
+    background-color:#C5E1A5;
+}
+
+.btn-refresh:hover{
+    background-color: #7CB342;
+} */
