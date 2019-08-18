@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABC Bank - Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script>
+        var tmp = JSON.parse(localStorage.getItem("account"))
+        var test = localStorage.setItem("account", JSON.stringify(tmp))
+    </script>
+</head>
+
+<body>
+    <div class="name-role">
+        <h1 id="title-name"></h1>
+        <h1 id="title-role"></h1>
+        <a id="page-logout" class="btn btn-light mt-2" role="button" href="./index.html">Logout</a>
+    </div>
+    <div class="container option-list">
+        <div class="text-center">
+            <h2 id="title-option">Choose an option:</h2>
+        </div>
+        <div class="d-flex flex-column align-items-center option-list-buttons">
+            <a id="create-client" class="btn btn-light home-option" href="./new-customer.html" role="button">
+                Register New Client
+            </a>
+            <a id="create-account" class="btn btn-light home-option" href="./create-account.html" role="button">
+                Create New Bank Account
+            </a>
+            <a id="view-client" class="btn btn-light home-option" href="./cae-customer.html" role="button">
+                View/Edit Client Details
+            </a>
+            <a id="view-account" class="btn btn-light home-option" href="./cae-account.html" role="button">
+                View/Delete Account Details
+            </a>
+        </div>
+    </div>
+    <script src="js/home.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
