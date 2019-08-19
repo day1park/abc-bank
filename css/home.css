@@ -1,0 +1,44 @@
+#nav-menu-cae,
+#nav-menu-ct {
+    display: none;
+    flex-direction: row;
+}
+
+.home-option {
+    margin: 10px 0 10px;
+    width: 300px;
+}
+
+#title-option {
+    margin: 20px 0 20px;
+    font-weight: bold;
+}
+
+
+.name-role {
+    padding: 10px;
+    text-align: right;
+}
+
+
+#title-name, #title-role {
+    font-size: 1rem;
+}
+
+.option-list {
+    margin-top: 110px;
+}
+
+.option-list-buttons {
+    margin-top: 30px;
+}
+
+#page-logout {
+    background-color: #f91111;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+#page-logout:hover {
+    background-color: #a80202;
+}
