@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABC Bank - View/Edit Customer Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cae-customer.css">
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center">
+        <div class="container search-customer">
+            <div class="search-title">
+                <h1 class="text-center mt-4 search-customer-title">Customer Profile</h1>
+            </div>
+            <form class="mt-4">
+                <div class="form-row justify-content-center">
+                    <div class="form-group mr-3">
+                        <label for="cust-ssn-id">SSN ID:</label>
+                        <input id="cust-ssn-id" class="form-control" type="text" placeholder="Enter SSN ID:" />
+                        <div id="cust-ssn-id-error" class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cust-id">Customer ID:</label>
+                        <input id="cust-id" class="form-control" type="text" placeholder="Enter Customer ID:" />
+                        <div id="cust-id-error" class="invalid-feedback"></div>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <a class="btn btn-light mr-3 btn-def-size btn-back" role="button" href="./home-cae.html">Back</a>
+                    <button class="btn btn-light btn-def-size" type="button" onclick="edit()">Search</button>
+                </div>
+            </form>
+            <form class="mt-4 display-edit">
+                <div class="form-row">
+                    <div class="form-group col-4">
+                        <label for="cust-ssn-id">Customer SSN ID:</label>
+                        <input id="ssn-id-show" class="form-control" type="text" value="" readonly />
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="cust-id">Customer ID:</label>
+                        <input id="cust-id-show" class="form-control" type="text" value="" readonly />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-4">
+                        <label for="cust-first-name">First Name:</label>
+                        <input id="cust-first-name" class="form-control" type="text" value="" />
+                        <div id="cust-first-name-error" class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="cust-last-name">Last Name:</label>
+                        <input id="cust-last-name" class="form-control" type="text" value="" />
+                        <div id="cust-last-name-error" class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="cust-age">Age:</label>
+                        <input id="cust-age" class="form-control" type="number" value="" />
+                        <div id="cust-age-error" class="invalid-feedback"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cust-address-1">Address Line 1:</label>
+                    <input id="cust-address-1" class="form-control" type="text" value="" />
+                    <div id="cust-address-1-error" class="invalid-feedback"></div>
+                </div>
+                <div class="form-group">
+                    <label for="cust-address-2">Address Line 2:</label>
+                    <input id="cust-address-2" class="form-control" type="text" value="" />
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-4">
+                        <label for="cust-city">City:</label>
+                        <input id="cust-city" class="form-control" type="text" value="" />
+                        <div id="cust-city-error" class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="cust-state">State:</label>
+                        <input id="cust-state" class="form-control" type="text" value="" />
+                        <div id="cust-state-error" class="invalid-feedback"></div>
+                    </div>
+                </div>
+                <div class="col text-center mt-4 mb-2">
+                    <button class="btn btn-light btn-def-size" type="button" onclick="submit_customer()">Submit</button>
+                    <button class="btn btn-light btn-cancel btn-def-size mx-3" type="button"
+                        onclick="delete_account()">Delete</button>
+                    <button class="btn btn-light btn-def-size" type="button" onclick="view_customer()">View</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/edit_customer.js"></script>
+</body>
+
+</html>
