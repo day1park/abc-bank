@@ -1,0 +1,40 @@
+.display-edit {
+    display: none;
+}
+
+.search-title {
+    padding: 20px 0 20px;
+}
+
+.search-customer-title {
+    font-weight: bold;
+}
+
+.search-customer {
+    background-color: white;
+    padding: 0 30px 40px 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+}
+
+a.btn.btn-light.mr-3.btn-def-size.btn-back {
+    color: rgb(247, 229, 229);
+    background-color: #343a40;
+}
+
+a.btn.btn-light.mr-3.btn-def-size.btn-back:hover {
+    background-color: #232525;
+}
+
+button.btn.btn-light.btn-cancel.btn-def-size.mx-3 {
+    background-color: #f91111;
+    color: rgb(255, 255, 255);
+}
+
+
+button.btn.btn-light.btn-cancel.btn-def-size.mx-3:hover {
+    background-color: #a80202;
+  }
+
+
