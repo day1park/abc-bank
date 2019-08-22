@@ -1,0 +1,17 @@
+a.btn.btn-light.btn-def-size.btn-back {
+    color: rgb(247, 229, 229);
+    background-color: #343a40;
+}
+
+a.btn.btn-light.btn-def-size.btn-back:hover {
+    background-color: #232525;
+}
+
+button.btn.btn-light.btn-def-size.btn-refresh.mr-3 {
+    background-color:#7CB342;
+    color: white;
+}
+
+button.btn.btn-light.btn-def-size.btn-refresh.mr-3:hover {
+    background-color:#558B2F;
+}
