@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABC Bank - View Customer Detail</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cae-view-customer.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-title">
+            <h1 class="text-center my-4 title-bold">Customer Detail</h1>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Customer ID</th>
+                    <th>SSN ID</th>
+                    <th>Username</th>
+                    <th>Note</th>
+                    <th>Last Updated</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="cust-id"></td>
+                    <td id="ssn-id"></td>
+                    <td id="username"></td>
+                    <td id="note"></td>
+                    <td id="last-updated"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="mt-4 text-center">
+            <button class="btn btn-light btn-def-size btn-refresh mr-3" type="button" onclick="">Refresh</button>
+            <a class="btn btn-light btn-def-size btn-back" role="button" href="./cae-customer.html">Back</a>
+        </div>
+    </div>
+    <script src="js/cae-view-customer.js"></script>
+</body>
+
+</html>
