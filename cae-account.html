@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABC Bank - View/Delete Account Detail</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cae-account.css">
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center search-account">
+        <div>
+            <div class="page-title">
+                <h1 class="text-center my-4 title-bold">Customer's Accounts</h1>
+            </div>
+            <form class="mt-4 mb-4">
+                <div class="form-row justify-content-center">
+                    <div class="form-group mr-3">
+                        <label for="cust-ssn-id">SSN ID:</label>
+                        <input id="cust-ssn-id" class="form-control" type="text" placeholder="Enter SSN ID:" />
+                        <div id="cust-ssn-id-error" class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cust-id">Customer ID:</label>
+                        <input id="cust-id" class="form-control" type="text" placeholder="Enter Customer ID:" />
+                        <div id="cust-id-error" class="invalid-feedback"></div>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <a class="btn btn-light btn-def-size btn-back mr-3" role="button" href="./home-cae.html">Back</a>
+                    <button class="btn btn-light btn-def-size" type="button" onclick="show_account()">Search</button>
+                </div>
+            </form>
+            <div class="mt-4 display-accounts">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Account ID</th>
+                            <th>Account Type</th>
+                            <th>Balance</th>
+                            <th>Creation Date</th>
+                            <th>Closing Date</th>
+                            <th>Duration</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="cust-accounts"></tbody>
+                </table>
+                <div class="col text-center mt-4 mb-2">
+                    <button class="btn btn-light" type="button" onclick="view_button()">View</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/cae-account.js"></script>
+</body>
+
+</html>
