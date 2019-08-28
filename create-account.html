@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABC Bank - Create New Account</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/create-account.css">
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center">
+        <div class="account-form">
+            <div class="form-title">
+                <h1 class="mt-4 form-title">Create New Account</h1>
+            </div>
+            <form class="mt-4 register-container">
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-8">
+                        <label for="cust-id">Customer ID:</label>
+                        <input id="cust-id" class="form-control" type="text" placeholder="Enter Customer ID" />
+                        <div id="cust-id-error" class="invalid-feedback"></div>
+                    </div>
+                </div>
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-8">
+                        <label for="acc-type">Account Type:</label>
+                        <select id="acc-type" class="form-control select" required>
+                            <option value="" disabled selected hidden>(Choose Account Type)</option>
+                            <option value="Saving">Saving</option>
+                            <option value="Current">Current</option>
+                        </select>
+                        <div id="acc-type-error" class="invalid-feedback"></div>
+                    </div>
+                </div>
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-8">
+                        <label for="deposit-amount">Deposit Amount:</label>
+                        <input id="deposit-amount" class="form-control" type="number"
+                            placeholder="Enter Deposit Amount" />
+                        <div id="deposit-amount-error" class="invalid-feedback"></div>
+                    </div>
+                </div>
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-8">
+                        <label for="cust-note">Note</label>
+                        <textarea id="cust-note" class="form-control" rows="3" placeholder="Enter Note"></textarea>
+                    </div>
+                </div>
+                <div class="col text-center mt-4">
+                    <button class="btn btn-light mr-4" type="button" onclick="checkAccReg()">Submit</button>
+                    <a class="btn btn-light btn-cancel ml-4" role="button" href="./home-cae.html">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/create-account.js"></script>
+</body>
+
+</html>
