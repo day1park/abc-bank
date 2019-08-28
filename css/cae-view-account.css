@@ -1,0 +1,23 @@
+
+
+button.btn.btn-light.btn-def-size.btn-refresh {
+    color: white;
+    background-color:#7CB342;
+    border-radius: 18px;
+    width: 70px;
+    font-size: 14px;  
+}
+
+button.btn.btn-light.btn-def-size.btn-refresh:hover {
+    background-color:#558B2F;
+}
+
+
+a.btn.btn-light.btn-def-size.btn-back {
+    color: rgb(247, 229, 229);
+    background-color: #343a40;
+}
+
+a.btn.btn-light.btn-def-size.btn-back:hover {
+    background-color: #232525;
+}
