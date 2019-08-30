@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABC Bank - View Statement</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/ct-view.css">
+</head>
+
+<body>
+    <div class="container statement-form">
+        <div class="page-title">
+            <h1 class="text-center my-4 title-bold">View Statement</h1>
+        </div>
+        <form class="mb-4">
+            <div class="form-row justify-content-center">
+                <div class="form-group col-3 mr-3">
+                    <label for="acc-id">Account ID:</label>
+                    <input id="acc-id" class="form-control" type="text" placeholder="Enter Account ID" />
+                    <div id="acc-id-error" class="invalid-feedback"></div>
+                </div>
+                <div class="col-3">
+                </div>
+            </div>
+            <div class="form-row justify-content-center">
+                <div class="form-group col-3 mr-3">
+                    <label for="start-date">Start Date:</label>
+                    <input id="start-date" class="form-control" type="date" placeholder="Enter Start Date" />
+                    <div id="start-date-error" class="invalid-feedback"></div>
+                </div>
+                <div class="form-group col-3">
+                    <label for="end-date">End Date:</label>
+                    <input id="end-date" class="form-control" type="date" placeholder="Enter End Date" />
+                    <div id="end-date-error" class="invalid-feedback"></div>
+                </div>
+            </div>
+            <div class="col text-center">
+                <button id="page-submit" class="btn btn-light mr-3" type="button" onclick="">Submit</button>
+                <a id="page-cancel" class="btn btn-light btn-cancel" role="button" href="./home-ct.html">Cancel</a>
+            </div>
+        </form>
+        <div id="display-transactions" class="disp-trans">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Account ID</th>
+                        <th>Transaction ID</th>
+                        <th>Transaction Date</th>
+                        <th>Transaction Note</th>
+                        <th>Credit</th>
+                        <th>Debit</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+                <tbody id="cust-transactions"></tbody>
+            </table>
+            <div class="col text-center mt-4 mb-2">
+                <button id="page-print" class="btn btn-light btn-def-size mr-3" type="button"
+                    onclick="window.print()">Print</button>
+                <a id="page-back" class="btn btn-light btn-def-size btn-back" role="button"
+                    href="./home-ct.html">Back</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/ct-view.js"></script>
+</body>
+
+</html>
