@@ -1,0 +1,33 @@
+#display-transactions {
+    display: none;
+}
+
+.statement-form {
+    background-color: white;
+    padding: 0 30px 40px 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a.btn.btn-light.btn-cancel {
+    background-color: #f91111;
+    color: rgb(255, 255, 255);
+}
+
+a.btn.btn-light.btn-cancel:hover {
+    background-color: #a80202;
+}
+
+a.btn.btn-light.btn-def-size.btn-back {
+    color: rgb(247, 229, 229);
+    background-color: #343a40;
+}
+
+a.btn.btn-light.btn-def-size.btn-back:hover {
+    background-color: #232525;
+}
+
+.disp-trans {
+    margin-top: 60px;
+}
