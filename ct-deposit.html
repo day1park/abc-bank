@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABC Bank - CT Deposit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/ct-action-confirm.css">
+</head>
+
+<body>
+    <div class="container option-form">
+        <div class="page-title">
+            <h1 class="my-4 text-center title-bold">Deposit Option</h1>
+        </div>
+        <form>
+            <div class="form-row justify-content-center">
+                <div class="form-group col-4">
+                    <label for="dep-amount">Deposit Amount:</label>
+                    <input id="dep-amount" class="form-control" type="number" placeholder="Enter Deposit Amount" />
+                    <div id="dep-amount-error" class="invalid-feedback"></div>
+                </div>
+            </div>
+            <div class="form-row justify-content-center">
+                <div class="form-group col-4">
+                    <label for="trans-note">Transaction Note:</label>
+                    <textarea id="trans-note" class="form-control" type="number"
+                        placeholder="Enter Transaction Note"></textarea>
+                </div>
+            </div>
+            <div class="col text-center">
+                <button id="page-submit" class="btn btn-light mr-3" type="button" onclick="submit_deposit()">Submit</button>
+                <a id="page-cancel" class="btn btn-light btn-cancel" role="button" href="./ct-action.html">Cancel</a>
+            </div>
+            <div id="cust-id-result" class="form-group col-4 mt-3">
+                <label for="cust-id-show">Customer ID:</label>
+                <input id="cust-id-show" class="form-control" type="text" value="" readonly />
+            </div>
+            <div id="result-balance">
+                <table class="table mt-5 mb-3">
+                    <thead>
+                        <tr>
+                            <th>Account ID</th>
+                            <th>Account Type</th>
+                            <th>Balance Before Deposit</th>
+                            <th>Balance After Deposit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="result-id"></td>
+                            <td id="result-type"></td>
+                            <td id="result-before"></td>
+                            <td id="result-after"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-center">
+                    <a id="page-back" class="btn btn-light btn-def-size btn-back mb-2" role="button"
+                        href="./ct-action.html">Back</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/ct-deposit.js"></script>
+</body>
+
+</html>

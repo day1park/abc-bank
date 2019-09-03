@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABC Bank - CT View Accounts</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/ct-action.css">
+</head>
+
+<body>
+    <div class="container customer-account-info">
+        <div class="page-title">
+            <h1 class="my-4 text-center title-bold">Customer's Accounts Info</h1>
+        </div>
+        <form>
+            <div class="form-row justify-content-center">
+                <div class="form-group mr-3">
+                    <label for="cust-ssn-id">SSN ID:</label>
+                    <input id="cust-ssn-id" class="form-control" type="text" placeholder="Enter SSN ID" />
+                    <div id="cust-ssn-id-error" class="invalid-feedback"></div>
+                    <label for="acc-id" class="mt-2">Account ID:</label>
+                    <input id="acc-id" class="form-control" type="text" placeholder="Enter Account ID" />
+                    <div id="acc-id-error" class="invalid-feedback"></div>
+                </div>
+                <div class="form-group">
+                    <label for="cust-id">Customer ID:</label>
+                    <input id="cust-id" class="form-control" type="text" placeholder="Enter Customer ID" />
+                    <div id="cust-id-error" class="invalid-feedback"></div>
+                </div>
+            </div>
+            <div class="text-center mb-3">
+                <span>Please enter one of the inputs above</span>
+            </div>
+            <div class="col text-center">
+                <a id="page-back" class="btn btn-light btn-def-size btn-back mr-3" role="button" href="./home-ct.html">Back</a>
+                <button id="page-search" class="btn btn-light btn-def-size" type="button" onclick="cashier_search()">Search</button>
+            </div>
+
+            <div id="choose-account" class="form-group col-4 mt-3">
+                <label for="bank-account">Account:</label>
+                <select id="bank-account" class="form-control select" onchange="choose_account()">
+                    <option value="" disabled selected hidden>(Choose Account)</option>
+                </select>
+                <div id="bank-account-error" class="invalid-feedback"></div>
+            </div>
+
+            <div id="cust-id-result" class="form-group col-4 mt-3">
+                <label for="cust-id-show">Customer ID:</label>
+                <input id="cust-id-show" class="form-control" type="text" value="" readonly />
+            </div>
+
+            <table id="result-table" class="table my-5">
+                <thead>
+                    <tr>
+                        <th>Account ID</th>
+                        <th>Account Type</th>
+                        <th>Balance</th>
+                        <th class="text-center">Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="result-id"></td>
+                        <td id="result-type"></td>
+                        <td id="result-balance"></td>
+                        <td class="text-center teller-options">
+                            <button id="deposit-btn" class="btn btn-light btn-options" type="button" onclick="deposit_acc()">Deposit</button>
+                            <button id="withdrawal-btn" class="btn btn-light btn-options" type="button" onclick="withdrawal_acc()">Withdrawal</button>
+                            <button id="transfer-btn" class="btn btn-light btn-options" type="button" onclick="transfer_acc()">Transfer</button>
+                            <button id="view-btn" class="btn btn-light btn-options" type="button" onclick="">View</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <script src="js/ct-action.js"></script>
+</body>
+
+</html>
